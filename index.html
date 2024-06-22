@@ -9,15 +9,45 @@
 
 </head>
 <body>
+
+
     <header>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div id="menu-icon" class="menu-icon">☰</div>
+            <div class="nav-items-container">
+                <ul>
+                    <li><a onclick="hideNav()" href="#home">Home</a></li>
+                    <li><a onclick="hideNav()" href="#projects">Projects</a></li>
+                    <li><a onclick="hideNav()" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-items-container-large">
+                <ul>
+                    <li><a onclick="hideNav()" href="#home">Home</a></li>
+                    <li><a onclick="hideNav()" href="#projects">Projects</a></li>
+                    <li><a onclick="hideNav()" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
+    <script>
+        // ====================== MANAGE NAV ======================\\
+        const element = document.getElementById('menu-icon');
+        
+        function hideNav(){
+            document.querySelector('.nav-items-container').classList.remove('active');
+        }
+
+        if(!element) {
+            console.error('Element not found');
+        } else  {
+            element.addEventListener('click', function() {
+            document.querySelector('.nav-items-container').classList.toggle('active');
+        });
+        }
+        
+    </script>
 
     <section id="home" class="section">
         <div class="container">
