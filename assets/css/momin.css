@@ -54,6 +54,7 @@ body {
     font-size: 22px;
     font-weight: normal;
 }
+
 .nav-items-container {
     display: none;
     overflow-y: auto;
@@ -226,6 +227,19 @@ margin-bottom: 100px;
     .menu-icon {
         display: block;
     }
+
+    .mobile-menu-icon{
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+    }   
+
+    .menu-title{
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+    }
+
     nav ul {
         display: none;
     }
