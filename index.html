@@ -114,6 +114,31 @@
     </footer>
 
 
+
+<!-- ----------------------- Firebase hosting -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBf3QN63XMGhDCiek26fJ3dXgbXD0wqlZs",
+          authDomain: "momin-e116c.firebaseapp.com",
+          projectId: "momin-e116c",
+          storageBucket: "momin-e116c.appspot.com",
+          messagingSenderId: "9011313374",
+          appId: "1:9011313374:web:6f957e419864379d74e04f",
+          measurementId: "G-3SW9P0NM44"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
     
 </body>
 </html>
