@@ -191,8 +191,10 @@ footer {
     padding: 1rem;
     background: #333;
     color: #fff;
-    width: 100vw;
     bottom: 0;
+    p{
+        text-align: center;
+    }
 }
 
 .social-links{
