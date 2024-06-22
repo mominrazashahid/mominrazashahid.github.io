@@ -35,6 +35,18 @@ body {
   
   /*  wave icon animation end */
 
+  .intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .profile-image{
+    border-radius: 50%;
+    max-width: 300px;
+
+  }
+
 .menu-icon {
     display: none;
     cursor: pointer;
@@ -62,6 +74,7 @@ header {
     background: #333;
     color: #fff;
     padding: 1rem 0;
+    width: 100vw;
 }
 
 nav ul {
@@ -119,7 +132,6 @@ h1, h2 {
    display: flex;
     background: #f4f4f4;
     justify-content: space-between;
-    width: 100%;
     align-items: center;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -174,7 +186,7 @@ footer {
     background: #333;
     color: #fff;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     bottom: 0;
 }
 
@@ -237,6 +249,22 @@ margin-bottom: 100px;
     nav li {
         display: block;
     }
+
+    .intro{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .profile-image{
+        margin-top: 10px;
+    }
+
+    .description{
+        text-align: justify;
+    }
+
     .project-list {
         flex-direction: column;
     }

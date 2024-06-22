@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Moman Raza</title>
     <link rel="stylesheet" href="assets/css/momin.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>👨‍💻</text></svg>"></link>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>👨‍💻</text></svg>">
+    </link>
 
-     <!-- SEO Meta Tags -->
-     <meta name="description" content="Moman Raza personal portfolio showcasing projects, skills, and contact information.">
-     <meta name="keywords" content="Moman Raza, Portfolio, App developer, Web Developer">
-     <meta name="author" content="Moman Raza">
-     <!-- Social Media Meta Tags -->
-     <meta property="og:title" content="Moman Raza">
-     <meta property="og:description" content="Moman Raza's personal portfolio showcasing projects, skills, and contact information.">
-     <meta property="og:image" content="https://1drv.ms/i/s!AiY7sHOSxnmvoDH2tJHii2_WVbtt?e=cbQXLJ">
-     <meta property="og:url" content="https://mominrazashahid.github.io">
-     <meta name="twitter:card" content="summary_large_image">
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Moman Raza personal portfolio showcasing projects, skills, and contact information.">
+    <meta name="keywords" content="Moman Raza, Portfolio, App developer, Web Developer">
+    <meta name="author" content="Moman Raza">
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Moman Raza">
+    <meta property="og:description"
+        content="Moman Raza's personal portfolio showcasing projects, skills, and contact information.">
+    <meta property="og:image" content="https://1drv.ms/i/s!AiY7sHOSxnmvoDH2tJHii2_WVbtt?e=cbQXLJ">
+    <meta property="og:url" content="https://mominrazashahid.github.io">
+    <meta name="twitter:card" content="summary_large_image">
 </head>
+
 <body>
 
 
@@ -45,29 +51,38 @@
     <script>
         // ====================== MANAGE NAV ======================\\
         const element = document.getElementById('menu-icon');
-        
-        function hideNav(){
+
+        function hideNav() {
             document.querySelector('.nav-items-container').classList.remove('active');
         }
 
-        if(!element) {
+        if (!element) {
             console.error('Element not found');
-        } else  {
-            element.addEventListener('click', function() {
-            document.querySelector('.nav-items-container').classList.toggle('active');
-        });
+        } else {
+            element.addEventListener('click', function () {
+                document.querySelector('.nav-items-container').classList.toggle('active');
+            });
         }
-        
+
     </script>
 
     <section id="home" class="section">
         <div class="container">
-            <h1 class="title">Introduction</h1>
-            <p class="description">Hi,  <span class="wave">👋</span>  I'm <strong> Moman Raza </strong>, a full stack Developer . Experienced with all stages of
-                the development cycle for dynamic projects. Well-versed in numerous
-                skills including Node JS, React JS, Angular JS, JavaScript, CSS,
-                MongoDB, Mongoose, Postgres, and Sequelize. Strong background in
-                project management and customer relations.</p>
+
+            <div class=" intro">
+                <div>
+                    <h1 class="title">Introduction <br></h1>
+                    <p class="description">
+                        Hi, <span class="wave">👋</span> I'm <strong> Moman Raza </strong>, a full stack
+                        Developer . Experienced with all stages of
+                        the development cycle for dynamic projects. Well-versed in numerous
+                        skills including Node JS, React JS, Angular JS, JavaScript, CSS,
+                        MongoDB, Mongoose, Postgres, and Sequelize. Strong background in
+                        project management and customer relations.</p>
+                </div>
+                <img src="assets/img/moman raza.jpg" alt="Moman Raza" class="profile-image">
+
+            </div>
         </div>
     </section>
 
@@ -77,16 +92,16 @@
         <div class="container">
             <h1 class="title">Projects</h1>
             <div class="project-list">
-         
+
                 <div class="project">
-                   
+
                     <div class="project-desc">
                         <h3 class="sub-description">
                             <a href="wallet.html">
                                 E Wallet
                             </a>
                         </h3>
-                      
+
                         <ul class="my-list" style="list-style-type: disc;margin-left: 5%; margin-top: 20px">
                             <li>Our app offers a comprehensive solution for managing and tracking your expenses,
                                 enabling users to maintain financial discipline effortlessly.</li>
@@ -107,7 +122,7 @@
                         <img width="50%" src="assets/img/mobile/screen-slider/home.png" alt="mobile image">
                     </div>
                 </div>
-               
+
             </div>
         </div>
     </section>
@@ -116,21 +131,28 @@
         <div class="container">
             <h2 class="title">Contact Info</h2>
             <p><strong>Name:</strong> Moman Raza</p>
-            <p><strong>Email:</strong> <a target="_blank" href="mailto:mominrazashahid0@gmail.com">mominrazashahid0@gmail.com</a></p>
+            <p><strong>Email:</strong> <a target="_blank"
+                    href="mailto:mominrazashahid0@gmail.com">mominrazashahid0@gmail.com</a></p>
             <p><strong>Phone Number:</strong> <a href="tel:+923081136724">+92 308 1136724</a></p>
         </div>
     </section>
     <div class="social-links">
-        <a href="https://www.linkedin.com/in/momanraza" target="_blank" title="LinkedIn"><img class="icon-social" src="assets/img/social_icons/linkedin.png" alt="LinkedIn"></a>
-        <a href="https://stackoverflow.com/users/10952010/moman-raza" target="_blank" title="Facebook"><img class="icon-social" src="assets/img/social_icons/stackoverflow.png" alt="stackoverflow"></a>
-        <a href="https://www.facebook.com/momin.raza.921" target="_blank" title="Facebook"><img class="icon-social" src="assets/img/social_icons/facebook.png" alt="Facebook"></a>
-        <a href="https://www.instagram.com/moman_raza7/" target="_blank" title="LinkedIn"><img class="icon-social" src="assets/img/social_icons/instagram.png" alt="instagram"></a>
-        <a href="https://x.com/Mominraza6?s=09" target="_blank" title="Twitter"><img class="icon-social" src="assets/img/social_icons/twitter.png" alt="Twitter"></a>
+        <a href="https://www.linkedin.com/in/momanraza" target="_blank" title="LinkedIn"><img class="icon-social"
+                src="assets/img/social_icons/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://stackoverflow.com/users/10952010/moman-raza" target="_blank" title="Facebook"><img
+                class="icon-social" src="assets/img/social_icons/stackoverflow.png" alt="stackoverflow"></a>
+        <a href="https://www.facebook.com/momin.raza.921" target="_blank" title="Facebook"><img class="icon-social"
+                src="assets/img/social_icons/facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/moman_raza7/" target="_blank" title="LinkedIn"><img class="icon-social"
+                src="assets/img/social_icons/instagram.png" alt="instagram"></a>
+        <a href="https://x.com/Mominraza6?s=09" target="_blank" title="Twitter"><img class="icon-social"
+                src="assets/img/social_icons/twitter.png" alt="Twitter"></a>
     </div>
 
     <footer>
         <p>&copy; 2024 Moman Raza. All rights reserved.</p>
     </footer>
-    
+
 </body>
+
 </html>
