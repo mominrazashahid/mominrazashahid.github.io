@@ -306,4 +306,8 @@ margin-bottom: 30px;
             width: 100%;
         }
     }
+
+    .icon-social{
+        max-width: 30px;
+    }
 }
