@@ -42,7 +42,7 @@ body {
   }
 
   .profile-image{
-    border-radius: 50%;
+    border-radius: 5%;
     max-width: 300px;
 
   }
