@@ -439,17 +439,14 @@ color: black !important;
   2.3 about-area
   ===========================*/
 
-.about-area {}
-
 .about-left-thumb {
     max-width: 80%;
 }
 
 .about-left-thumb img {
     max-width: 100%;
+    border-radius: 20px;
 }
-
-.about-content {}
 
 .about-content span {
     font-size: 18px;
@@ -655,8 +652,6 @@ color: black !important;
   2.5 Screen Slider
   ===========================*/
 
-.screen-slider {}
-
 .screen-slider .owl-dots {
     text-align: center;
     margin-top: 50px;
@@ -692,10 +687,6 @@ color: black !important;
 /*===========================
   2.6 Download Area
   ===========================*/
-
-.download-area {}
-
-.download-btns {}
 
 .download-btns a {
     margin: 0px 32px;
@@ -1906,3 +1897,7 @@ align-items: center;
 /*===========================
 END Blog Details
 ===========================*/
+
+.footer-privacy{
+    color: white;
+}
