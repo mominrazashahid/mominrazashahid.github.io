@@ -1,17 +1,27 @@
+
+
+/* Existing styles */
 body {
-    padding: 0;
-    margin: 0;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    -webkit-font-feature-settings: "pnum";
-    font-feature-settings: "pnum";
-    font-variant-numeric: proportional-nums;
-    position: relative;
-    background: #fff;
-  }
-  
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 1em;
+}
+
+/* Media query for devices with a width of up to 600px */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+        padding: 0.5em;
+    }
+
+    #content {
+        padding: 10px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+}
+
   .container {
       padding-right: 0;
       padding-left: 0;
