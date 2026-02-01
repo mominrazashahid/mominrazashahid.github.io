@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Moman Raza</title>
+    <title>Moman Raza | Senior Software Engineer</title>
     <link rel="stylesheet" href="assets/css/momin.css">
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>👨‍💻</text></svg>">
@@ -13,13 +13,13 @@
 
     <!-- SEO Meta Tags -->
     <meta name="description"
-        content="Moman Raza personal portfolio showcasing projects, skills, and contact information.">
-    <meta name="keywords" content="Moman Raza, Portfolio, App developer, Web Developer">
+        content="Moman Raza - Senior Software Engineer with 6+ years of Full-Stack Development experience. Expert in MEAN, MERN, Flutter, AWS, and DevOps.">
+    <meta name="keywords" content="Moman Raza, Senior Software Engineer, Full Stack Developer, MEAN Stack, MERN Stack, Angular, React, Node.js, AWS, Freelance Developer">
     <meta name="author" content="Moman Raza">
     <!-- Social Media Meta Tags -->
-    <meta property="og:title" content="Moman Raza">
+    <meta property="og:title" content="Moman Raza | Senior Software Engineer">
     <meta property="og:description"
-        content="Moman Raza's personal portfolio showcasing projects, skills, and contact information.">
+        content="Senior Software Engineer with 6+ years of Full-Stack Development. Expert in building scalable, production-grade applications.">
     <meta property="og:image" content="https://raw.githubusercontent.com/mominrazashahid/mominrazashahid.github.io/master/assets/img/moman%20raza.webp">
     <meta property="og:url" content="https://mominrazashahid.github.io">
     <meta name="twitter:card" content="summary_large_image">
@@ -30,324 +30,395 @@
 
 <body>
 
-
     <header>
         <nav>
             <div id="menu-icon" class="menu-icon mobile-menu-icon">
                 <span>☰</span>
-                <h1 class="title menu-title">Moman Raza <br></h1>
+                <h1 class="title menu-title">Moman Raza</h1>
             </div>
             <div class="nav-items-container">
                 <ul>
-                    <li><a onclick="hideNav()" href="#home">Home</a></li>
-                    <li><a onclick="hideNav()" href="#Services">Services</a></li>
+                    <li><a onclick="hideNav()" href="#about">About</a></li>
+                    <li><a onclick="hideNav()" href="#skills">Skills</a></li>
                     <li><a onclick="hideNav()" href="#projects">Projects</a></li>
+                    <li><a onclick="hideNav()" href="#experience">Experience</a></li>
                     <li><a onclick="hideNav()" href="#contact">Contact</a></li>
                 </ul>
             </div>
 
             <div class="nav-items-container-large">
                 <ul>
-                    <li><a onclick="hideNav()" href="#home">Home</a></li>
-                    <li><a onclick="hideNav()" href="#Services">Services</a></li>
-                    <li><a onclick="hideNav()" href="#projects">Projects</a></li>
-                    <li><a onclick="hideNav()" href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <script>
-        // ====================== MANAGE NAV ======================\\
-        const element = document.getElementById('menu-icon');
 
+    <script>
+        const element = document.getElementById('menu-icon');
         function hideNav() {
             document.querySelector('.nav-items-container').classList.remove('active');
         }
-
-        if (!element) {
-            console.error('Element not found');
-        } else {
+        if (element) {
             element.addEventListener('click', function () {
                 document.querySelector('.nav-items-container').classList.toggle('active');
             });
         }
-
     </script>
 
-    <section id="home" class="section">
+    <!-- Hero Section -->
+    <section id="about" class=" hero-section">
         <div class="container">
-
-            <div class=" intro">
-                <div>
-                    <h1 class="title">Introduction <br></h1>
-                    <p class="description">
-                        Hi, <span class="wave">👋</span> I'm <strong> Moman Raza </strong>, a full stack
-                        Developer . Experienced with all stages of
-                        the development cycle for dynamic projects. Well-versed in numerous
-                        skills including Node JS, React JS, Angular JS, Dart, JavaScript, CSS,
-                        MongoDB, Mongoose, Postgres, and Sequelize. Strong background in
-                        project management and customer relations.</p>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="greeting">Hi there <span class="wave">👋</span></p>
+                    <h1 class="hero-title">I'm Moman Raza</h1>
+                    <h2 class="hero-subtitle">Senior Software Engineer</h2>
+                    <p class="hero-tagline">Full Stack | Cloud & Infrastructure | 6+ Years Experience</p>
+                    <p class="hero-description">
+                        I build scalable, production-grade applications across web, cloud, and infrastructure.
+                        Currently building a <strong>VPN App</strong> and <strong><a href="https://myspendly.com" target="_blank" rel="noopener noreferrer">MySpendly</a></strong>.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">Hire Me</a>
+                        <a href="mailto:mominrazashahid0@gmail.com" class="btn btn-secondary">Get In Touch</a>
+                    </div>
                 </div>
-
-                <picture>
-                    <source srcset="moman raza.webp" type="image/webp">
-                    <img src="assets/img/moman raza.webp" alt="Moman Raza" class="profile-image">
-                </picture>
-
+                <div class="hero-image">
+                    <picture>
+                        <source srcset="assets/img/moman raza.webp" type="image/webp">
+                        <img src="assets/img/moman raza.png" alt="Moman Raza" class="profile-image">
+                    </picture>
+                </div>
             </div>
         </div>
     </section>
 
-    <div class="social-links">
-        <a href="https://www.linkedin.com/in/momanraza" target="_blank" title="LinkedIn">
-            <picture>
-                <source srcset="assets/img/social_icons/linkedin.webp" type="image/webp">
-                <img width="50px" height="100%" class="icon-social" src="assets/img/social_icons/linkedin.webp"
-                    alt="LinkedIn">
-            </picture>
+    <!-- Skills Section -->
+    <section id="skills" class="">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
 
-
-
-        </a>
-        <a href="https://github.com/mominrazashahid" target="_blank" title="github">
-
-
-            <picture>
-                <source srcset="assets/img/social_icons/github.webp" type="image/webp">
-                <img width="50px" height="100%" class="icon-social" src="assets/img/social_icons/github.webp"
-                    alt="github">
-            </picture>
-
-
-            <picture>
-                <source srcset="assets/img/social_icons/stackoverflow.webp" type="image/webp">
-                <img width="50px" height="100%" class="icon-social" src="assets/img/social_icons/stackoverflow.webp"
-                    alt="stackoverflow">
-            </picture>
-
-
-        </a>
-        <a href="https://www.facebook.com/momin.raza.921" target="_blank" title="Facebook">
-            <picture>
-                <source srcset="assets/img/social_icons/facebook.webp" type="image/webp">
-                <img width="50px" height="100%" class="icon-social" src="assets/img/social_icons/facebook.webp"
-                    alt="LinkedIn">
-            </picture>
-
-        </a>
-        <a href="https://www.instagram.com/moman_raza7/" target="_blank" title="LinkedIn">
-
-            <picture>
-                <source srcset="assets/img/social_icons/instagram.webp" type="image/webp">
-                <img width="50px" height="100%" class="icon-social" src="assets/img/social_icons/instagram.webp"
-                    alt="instagram">
-            </picture>
-
-
-        </a>
-        <a href="https://x.com/Mominraza6?s=09" target="_blank" title="Twitter">
-
-            <picture>
-                <source srcset="assets/img/social_icons/twitter.webp" type="image/webp">
-                <img width="50px" height="100%" class="icon-social" src="assets/img/social_icons/twitter.webp"
-                    alt="instagram">
-            </picture>
-        </a>
-    </div>
-
-
-
-
-
-    <section class="container" id="Services">
-        <h1 class="title">Services <br></h1>
-        <section class="card__container">
-
-
-            <!--==================== SERVICE CARD ====================-->
-            <div class="card__bx card__1">
-                <div class="card__data">
-                    <div class="card__icon">
-                        <div class="card__icon-bx">
-                            <picture>
-                                <source srcset="assets/img/services/web-development.webp" type="image/webp">
-                                <img id="img-web" width="100px" height="100%"  src="assets/img/services/web-development.webp"
-                                    alt="web development">
-                            </picture>
-
-
-                        </div>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Angular 2-17</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Next.js (SSR, SSG)</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">RxJS</span>
+                        <span class="skill-tag">NgRx</span>
+                        <span class="skill-tag">Redux</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">SCSS</span>
+                        <span class="skill-tag">Angular Material</span>
+                        <span class="skill-tag">PrimeNG</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">D3.js</span>
                     </div>
-                    <div class="card__content">
-                        <h3>Web Development</h3>
-                        <p>Unlock the full potential of your web applications with our expert development services in
-                            Angular, React, and Next.js, delivering cutting-edge, high-performance solutions.</p>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Webhook Architecture</span>
+                        <span class="skill-tag">OAuth & Auth Flows</span>
+                        <span class="skill-tag">Socket.IO</span>
+                        <span class="skill-tag">Payment Integration (Stripe)</span>
+                        <span class="skill-tag">AWS SES</span>
+                        <span class="skill-tag">AWS SNS/SQS</span>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Database</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">Node Cache</span>
+                        <span class="skill-tag">Mongoose</span>
+                        <span class="skill-tag">Sequelize</span>
+                    </div>
+                </div>
+
+                <!-- Mobile -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Mobile</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">Dart</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">RxDart</span>
+                        <span class="skill-tag">Push Notifications</span>
+                    </div>
+                </div>
+
+                <!-- AWS / Cloud -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">AWS / Cloud</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">EC2</span>
+                        <span class="skill-tag">S3</span>
+                        <span class="skill-tag">IAM</span>
+                        <span class="skill-tag">Load Balancers</span>
+                        <span class="skill-tag">AWS Lambda</span>
+                        <span class="skill-tag">AWS Textract</span>
+                    </div>
+                </div>
+
+                <!-- DevOps -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">DevOps & Infrastructure</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">CI/CD Pipelines</span>
+                        <span class="skill-tag">Nginx</span>
+                        <span class="skill-tag">PM2</span>
+                        <span class="skill-tag">Linux (Ubuntu VPS)</span>
+                        <span class="skill-tag">Server Management</span>
+                        <span class="skill-tag">Monitoring & Scaling</span>
+                        <span class="skill-tag">Cloudflare</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git / GitHub</span>
+                        <span class="skill-tag">Jira</span>
+                        <span class="skill-tag">Trello</span>
+                        <span class="skill-tag">Strapi CMS</span>
+                        <span class="skill-tag">PostHog</span>
                     </div>
                 </div>
             </div>
-            <div class="card__bx card__2">
-                <div class="card__data">
-                    <div class="card__icon">
-                        <div class="card__icon-bx">
-                            <picture>
-                                <source srcset="assets/img/services/app-development.webp" type="image/webp">
-                                
-                                <img width="100px" id="img-app" height="100%"  src="assets/img/services/app-development.webp"
-                                    alt="mobile development">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="card__content">
-                        <h3>Mobile Development</h3>
-                        <p>Transform your ideas into reality with our top-tier app development services in FLutter,
-                            creating robust, scalable, and engaging mobile applications</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card__bx card__3">
-                <div class="card__data">
-                    <div class="card__icon">
-                        <div class="card__icon-bx">
-                            <picture>
-                                <source srcset="assets/img/services/design.webp" type="image/webp">
-                                <img id="img-design" width="100px" height="100%"  src="assets/img/services/design.webp"
-                                    alt="design">
-                            </picture>
-
-                        </div>
-                    </div>
-                    <div class="card__content">
-                        <h3>Design</h3>
-                        <p>
-                            Create stunning, user-centric design with our premier front tend design services in Angular,
-                            React, and Next.js, Flutter
-                             combining aesthetics with functionality for a seamless digital
-                            experience
-
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
+        </div>
     </section>
 
-
-    
-
-
-
+    <!-- Projects Section -->
     <section id="projects" class="section">
         <div class="container">
-            <h1 class="title">Projects</h1>
-            <div class="project-list">
+            <h2 class="section-title">Projects</h2>
 
-                <div class="project">
-
-                    <div class="project-desc">
-                        <h3 class="sub-description">
-                            <a href="wallet_app/wallet.html">
-                                E Wallet
-                            </a>
-                        </h3>
-
-                        <ul class="my-list" style="list-style-type: disc;margin-left: 5%; margin-top: 20px">
-                            <li>Our app offers a comprehensive solution for managing and tracking your expenses,
-                                enabling users to maintain financial discipline effortlessly.</li>
-
-                            <li>Designed for individuals seeking a straightforward approach to budgeting, our platform
-                                simplifies expense tracking with intuitive features and real-time insights.</li>
-                            <li>By leveraging our app, users can gain control over their financial health, make informed
-                                decisions, and achieve their savings goals with ease.</li>
-
-                            <li>Explore a variety of tools within our app, including budget forecasting, expense
-                                categorization, and financial reporting, to enhance your financial literacy and
-                                planning.</li>
-
-
-                        </ul>
-                    </div>
-                    <div class="project-img-block">
-                        <picture>
-                            <source srcset="assets/img/mobile/screen-slider/wallet-app.webp" type="image/webp">
-                            <img class="wallet-project-img" width="300px" height="100%"
-                                src="assets/img/mobile/screen-slider/wallet-app.webp" alt="wallet App">
-                        </picture>
+            <div class="projects-list">
+                <div class="project-item">
+                    <div class="project-info">
+                        <h3><a href="https://myspendly.com" target="_blank">MySpendly</a></h3>
+                        <p>A personal finance and expense tracking application that helps users manage budgets, track spending, and achieve financial goals with intuitive insights.</p>
+                        <div class="project-tags">
+                            <span>Full Stack</span>
+                            <span>SaaS</span>
+                            <span>Fintech</span>
+                        </div>
                     </div>
                 </div>
 
+                <div class="project-item">
+                    <div class="project-info">
+                        <h3><a href="https://www.revbits.com/products/revbits-endpoint-security" target="_blank">RevBits Endpoint Security</a></h3>
+                        <p>Enterprise-grade endpoint security solution providing advanced threat protection, real-time monitoring, and comprehensive security management for organizations.</p>
+                        <div class="project-tags">
+                            <span>Enterprise</span>
+                            <span>Security</span>
+                            <span>Full Stack</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <h3>VPN App</h3>
+                        <p>Cross-platform VPN application built using VPN Gate infrastructure, providing secure and private internet access with server selection and connection management.</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>VPN Gate</span>
+                            <span>Mobile</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <h3><a href="https://github.com/mominrazashahid/git-sync" target="_blank">Git Sync - GitHub OAuth</a></h3>
+                        <p>GitHub OAuth implementation for authenticating users and fetching repository data. Demonstrates secure OAuth flow and GitHub API integration.</p>
+                        <div class="project-tags">
+                            <span>OAuth</span>
+                            <span>GitHub API</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <h3><a href="https://github.com/mominrazashahid/square-progress" target="_blank">Square Progress</a></h3>
+                        <p>An npm package for Angular that provides customizable square-shaped progress indicators with smooth animations and flexible styling options.</p>
+                        <div class="project-tags">
+                            <span>npm Package</span>
+                            <span>Angular</span>
+                            <span>Open Source</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <h3><a href="https://github.com/mominrazashahid/HTRS" target="_blank">Handwritten Text Recognition System</a></h3>
+                        <p>Python-based machine learning system for recognizing and digitizing handwritten text using computer vision and deep learning techniques.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>ML/AI</span>
+                            <span>Computer Vision</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <h3><a href="https://www.instagram.com/mangle_mapp/" target="_blank">Mangle BJJ</a></h3>
+                        <p>Mobile application for Brazilian Jiu-Jitsu practitioners. Developed the complete backend infrastructure handling user management, content delivery, and real-time features.</p>
+                        <div class="project-tags">
+                            <span>Backend</span>
+                            <span>Node.js</span>
+                            <span>Mobile App</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <h3><a href="https://play.google.com/store/apps/details?id=com.positivevibes.app" target="_blank">Positive Vibes</a></h3>
+                        <p>Wellness and motivation mobile app delivering daily positive content. Built the backend services for content management, notifications, and user engagement features.</p>
+                        <div class="project-tags">
+                            <span>Backend</span>
+                            <span>Node.js</span>
+                            <span>Mobile App</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section contact">
+    <!-- Experience Highlights Section -->
+    <section id="experience" class="section">
         <div class="container">
-            <h2 class="title">Contact Info</h2>
-            <p><strong>Name:</strong> Moman Raza</p>
-            <p><strong>Email:</strong> <a target="_blank"
-                    href="mailto:mominrazashahid0@gmail.com">mominrazashahid0@gmail.com</a></p>
-            <p><strong>Phone Number:</strong> <a href="tel:+923081136724">+92 308 1136724</a></p>
+            <h2 class="section-title">Experience Highlights</h2>
+
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-icon">🚀</div>
+                    <h3>Production Systems</h3>
+                    <p>Hands-on experience running production SaaS and fintech systems end-to-end</p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-icon">💳</div>
+                    <h3>Subscription Platforms</h3>
+                    <p>Built and maintained subscription-based platforms with Stripe integration</p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-icon">📄</div>
+                    <h3>Document Processing</h3>
+                    <p>Developed document-processing applications using AWS Textract & serverless architecture</p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-icon">⚡</div>
+                    <h3>Performance Focus</h3>
+                    <p>Strong focus on performance, reliability, and scalability in all projects</p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-icon">🖥️</div>
+                    <h3>Infrastructure</h3>
+                    <p>Deep experience with self-hosted servers and cloud infrastructure management</p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-icon">🏗️</div>
+                    <h3>Clean Architecture</h3>
+                    <p>Advocate for clean architecture and maintainable codebases</p>
+                </div>
+            </div>
+
+            <div class="current-work">
+                <h3>Currently</h3>
+                <div class="current-items">
+                    <div class="current-item">
+                        <span class="current-label">Building</span>
+                        <span class="current-link">VPN App</span>
+                        <span class="current-role">Developer</span>
+                    </div>
+                    <div class="current-item">
+                        <span class="current-label">Building</span>
+                        <a href="https://myspendly.com" target="_blank" class="current-link">MySpendly</a>
+                        <span class="current-role">Founder & Developer</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <div class="social-links">
-        <a href="https://www.linkedin.com/in/momanraza" target="_blank" title="LinkedIn">
-            <picture>
-                <source srcset="assets/img/social_icons/linkedin.webp" type="image/webp">
-                <img width="50px" height="100%" class="icon-social" src="assets/img/social_icons/linkedin.webp"
-                    alt="LinkedIn">
-            </picture>
 
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="contact-intro">I'm passionate about creating high-quality, reliable applications for SaaS and document-processing solutions. Let's collaborate to bring your vision to life!</p>
 
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <a href="mailto:mominrazashahid0@gmail.com">mominrazashahid0@gmail.com</a>
+                </div>
 
-        </a>
-        <a href="https://github.com/mominrazashahid" target="_blank" title="github">
+                <div class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <h3>Phone</h3>
+                    <a href="tel:+923081136724">+92 308 1136724</a>
+                </div>
 
-
-            <picture>
-                <source srcset="assets/img/social_icons/github.webp" type="image/webp">
-                <img width="50px" height="100%" class="icon-social" src="assets/img/social_icons/github.webp"
-                    alt="github">
-            </picture>
-
-
-            <picture>
-                <source srcset="assets/img/social_icons/stackoverflow.webp" type="image/webp">
-                <img width="50px" height="100%" class="icon-social" src="assets/img/social_icons/stackoverflow.webp"
-                    alt="stackoverflow">
-            </picture>
-
-
-        </a>
-        <a href="https://www.facebook.com/momin.raza.921" target="_blank" title="Facebook">
-            <picture>
-                <source srcset="assets/img/social_icons/facebook.webp" type="image/webp">
-                <img width="50px" height="100%" class="icon-social" src="assets/img/social_icons/facebook.webp"
-                    alt="LinkedIn">
-            </picture>
-
-        </a>
-        <a href="https://www.instagram.com/moman_raza7/" target="_blank" title="LinkedIn">
-
-            <picture>
-                <source srcset="assets/img/social_icons/instagram.webp" type="image/webp">
-                <img width="50px" height="100%" class="icon-social" src="assets/img/social_icons/instagram.webp"
-                    alt="instagram">
-            </picture>
-
-
-        </a>
-        <a href="https://x.com/Mominraza6?s=09" target="_blank" title="Twitter">
-
-            <picture>
-                <source srcset="assets/img/social_icons/twitter.webp" type="image/webp">
-                <img width="50px" height="100%" class="icon-social" src="assets/img/social_icons/twitter.webp"
-                    alt="instagram">
-            </picture>
-        </a>
-    </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🐙</div>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/mominrazashahid" target="_blank">github.com/mominrazashahid</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
+        <div class="social-links">
+            <a href="https://github.com/mominrazashahid" target="_blank" rel="noopener noreferrer" title="GitHub">
+                <img class="icon-social" src="assets/img/social_icons/github.webp" alt="GitHub">
+            </a>
+            <a href="https://stackoverflow.com" target="_blank" rel="noopener noreferrer" title="Stack Overflow">
+                <img class="icon-social" src="assets/img/social_icons/stackoverflow.webp" alt="Stack Overflow">
+            </a>
+            <a href="https://x.com/Mominraza6" target="_blank" rel="noopener noreferrer" title="Twitter/X">
+                <img class="icon-social" src="assets/img/social_icons/twitter.webp" alt="Twitter">
+            </a>
+        </div>
         <p>&copy; 2024 Moman Raza. All rights reserved.</p>
     </footer>
 
