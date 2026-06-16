@@ -314,6 +314,194 @@ h1, h2 {
     transform: translateY(-3px);
 }
 
+/* ====================== RESUME CONTACT LINE ====================== */
+.resume-contact-line {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.25rem;
+    margin: 0 0 1.5rem;
+    font-size: 0.9rem;
+}
+
+.resume-contact-line li {
+    position: relative;
+    padding-right: 1.25rem;
+}
+
+.resume-contact-line li:not(:last-child)::after {
+    content: '·';
+    position: absolute;
+    right: 0;
+    color: var(--text-muted);
+}
+
+.resume-contact-line a {
+    color: var(--text-secondary);
+}
+
+.resume-contact-line a:hover {
+    color: var(--accent-primary);
+}
+
+/* ====================== TIMELINE (EXPERIENCE) ====================== */
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 28px;
+    border-left: 2px solid var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    padding: 0 0 2.25rem 28px;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -37px;
+    top: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--bg-primary);
+    border: 3px solid var(--accent-primary);
+    box-shadow: 0 0 0 4px rgba(66, 184, 131, 0.12);
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+}
+
+.timeline-role {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.timeline-date {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--accent-primary);
+    white-space: nowrap;
+}
+
+.timeline-company {
+    font-size: 0.98rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin: 0.15rem 0 0.75rem;
+}
+
+.timeline-company a {
+    color: var(--accent-primary);
+    font-weight: 600;
+}
+
+.timeline-bullets {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.timeline-bullets li {
+    position: relative;
+    padding-left: 1.25rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.timeline-bullets li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--accent-primary);
+}
+
+.project-org {
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* ====================== EDUCATION / CERTS / LANGUAGES ====================== */
+.resume-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.resume-block {
+    background: var(--bg-card);
+    background-image: var(--gradient-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 28px;
+    transition: all 0.3s ease;
+}
+
+.resume-block:hover {
+    border-color: var(--accent-primary);
+    transform: translateY(-4px);
+    box-shadow: var(--card-shadow);
+}
+
+.resume-block-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.resume-block-title::before {
+    content: '';
+    width: 4px;
+    height: 20px;
+    background: var(--gradient-primary);
+    border-radius: 2px;
+}
+
+.edu-item {
+    margin-bottom: 1.1rem;
+}
+
+.edu-item:last-child {
+    margin-bottom: 0;
+}
+
+.edu-item h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.15rem;
+}
+
+.edu-org {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.1rem;
+}
+
+.edu-meta {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+
 /* ====================== SOCIAL LINKS ====================== */
 .social-links {
     display: flex;
@@ -531,13 +719,58 @@ h1, h2 {
 }
 
 .project-info h3 a {
-    color: var(--text-primary);
+    color: var(--accent-primary);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .project-info h3 a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+/* Auto external-link arrow on any title that opens a new tab */
+.project-info h3 a[target="_blank"]::after {
+    content: '↗';
+    display: inline-block;
+    margin-left: 4px;
+    font-size: 0.85em;
+    transition: transform 0.2s ease;
+}
+
+.project-info h3 a[target="_blank"]:hover::after {
+    transform: translate(2px, -2px);
+}
+
+/* Visible "View Project" link at the bottom of linked cards */
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 14px;
+    padding: 7px 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
     color: var(--accent-primary);
+    background: var(--chip-bg);
+    border: 1px solid var(--chip-border);
+    border-radius: 20px;
+    transition: all 0.25s ease;
+}
+
+.project-link:hover {
+    background: var(--accent-primary);
+    color: #fff;
+    border-color: var(--accent-primary);
+    transform: translateY(-2px);
+}
+
+.project-link .ext-arrow {
+    transition: transform 0.2s ease;
+}
+
+.project-link:hover .ext-arrow {
+    transform: translate(2px, -2px);
 }
 
 .project-info p {
@@ -901,5 +1134,236 @@ footer p {
     .project-tags span {
         font-size: 0.7rem;
         padding: 3px 10px;
+    }
+}
+
+/* ====================== PRINT / DOWNLOAD AS PDF ====================== */
+@media print {
+    @page {
+        margin: 14mm 14mm;
+    }
+
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        animation: none !important;
+        transition: none !important;
+    }
+
+    html, body {
+        background: #ffffff !important;
+        color: #1a1a1a !important;
+        font-size: 11pt;
+        line-height: 1.4;
+    }
+
+    .no-print,
+    header,
+    footer,
+    .hero-cta,
+    .social-links,
+    .project-link {
+        display: none !important;
+    }
+
+    .section {
+        padding: 0 0 12pt !important;
+        animation: none !important;
+        page-break-inside: avoid;
+    }
+
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Resume header */
+    .hero-section {
+        padding: 0 0 10pt !important;
+        border-bottom: 1.5pt solid #2f7d57;
+        margin-bottom: 12pt;
+    }
+
+    .hero-content {
+        flex-direction: row !important;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .greeting {
+        display: none !important;
+    }
+
+    .hero-title {
+        font-size: 22pt !important;
+        color: #14181d !important;
+        -webkit-text-fill-color: #14181d !important;
+        background: none !important;
+        text-align: left !important;
+        margin-bottom: 2pt !important;
+    }
+
+    .hero-subtitle {
+        font-size: 13pt !important;
+        color: #2f7d57 !important;
+        -webkit-text-fill-color: #2f7d57 !important;
+        text-align: left !important;
+        margin-bottom: 2pt !important;
+    }
+
+    .hero-tagline {
+        color: #444 !important;
+        font-size: 9.5pt !important;
+        margin-bottom: 6pt !important;
+    }
+
+    .hero-description {
+        color: #333 !important;
+        font-size: 10pt !important;
+        margin-bottom: 6pt !important;
+    }
+
+    .hero-description strong,
+    .hero-description a,
+    .timeline-company a,
+    .timeline-date,
+    .project-info h3 a {
+        color: #2f7d57 !important;
+    }
+
+    .resume-contact-line {
+        font-size: 9pt !important;
+        margin-bottom: 0 !important;
+    }
+
+    .resume-contact-line a {
+        color: #333 !important;
+    }
+
+    .profile-image {
+        max-width: 95px !important;
+        border-radius: 8px !important;
+    }
+
+    /* Section titles */
+    .section-title {
+        font-size: 13pt !important;
+        text-align: left !important;
+        color: #14181d !important;
+        -webkit-text-fill-color: #14181d !important;
+        background: none !important;
+        border-bottom: 1pt solid #ccc;
+        padding-bottom: 3pt;
+        margin-bottom: 10pt !important;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+
+    /* Timeline → clean resume entries */
+    .timeline {
+        border-left: none !important;
+        padding-left: 0 !important;
+        max-width: 100% !important;
+    }
+
+    .timeline-item {
+        padding: 0 0 10pt 0 !important;
+        page-break-inside: avoid;
+    }
+
+    .timeline-item::before {
+        display: none !important;
+    }
+
+    .timeline-role {
+        font-size: 11.5pt !important;
+        color: #14181d !important;
+    }
+
+    .timeline-company {
+        color: #333 !important;
+        margin: 0 0 4pt !important;
+        font-size: 10pt !important;
+    }
+
+    .timeline-bullets li,
+    .project-info p {
+        color: #333 !important;
+        font-size: 9.5pt !important;
+        line-height: 1.35 !important;
+    }
+
+    .timeline-bullets li::before,
+    .resume-block-title::before {
+        color: #2f7d57 !important;
+    }
+
+    /* Skills / projects / education blocks flatten */
+    .skill-category,
+    .project-item,
+    .resume-block,
+    .contact-card {
+        background: #fff !important;
+        border: 1pt solid #ddd !important;
+        border-radius: 6px !important;
+        padding: 10pt !important;
+        page-break-inside: avoid;
+        transform: none !important;
+    }
+
+    .skills-grid,
+    .resume-columns {
+        gap: 8pt !important;
+    }
+
+    .projects-list {
+        gap: 8pt !important;
+    }
+
+    .skill-category-title,
+    .resume-block-title,
+    .project-info h3,
+    .edu-item h4,
+    .contact-card h3 {
+        color: #14181d !important;
+        font-size: 10.5pt !important;
+    }
+
+    .skill-tag {
+        background: #eef6f1 !important;
+        color: #2f7d57 !important;
+        border: 1pt solid #cfe6da !important;
+        font-size: 8.5pt !important;
+        padding: 2pt 7pt !important;
+    }
+
+    .project-tags span {
+        background: #eef6f1 !important;
+        color: #2f7d57 !important;
+        border: 1pt solid #cfe6da !important;
+    }
+
+    .edu-org,
+    .edu-meta,
+    .contact-intro {
+        color: #444 !important;
+    }
+
+    .contact-card a {
+        color: #2f7d57 !important;
+    }
+
+    .contact-section {
+        background: #fff !important;
+    }
+
+    .contact-icon {
+        display: none !important;
+    }
+
+    a {
+        text-decoration: none !important;
     }
 }
